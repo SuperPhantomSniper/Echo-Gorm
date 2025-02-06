@@ -17,9 +17,9 @@ import (
 var db *gorm.DB
 
 type User struct {
-	ID       uint   `json:"ID" gorm:"primaryKey"`
-	Name     string `json:"Name"`
-	Birthday string `json:"Birthday"`
+	ID       uint   `json:"id" gorm:"primaryKey"`
+	Name     string `json:"name"`
+	Birthday string `json:"birthday"`
 }
 
 // Load environment variables
